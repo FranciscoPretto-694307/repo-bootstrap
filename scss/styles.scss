@@ -1,5 +1,19 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 
-.img-width {
-    max-width: 50px;
+@import "../node_modules/bootstrap/scss/bootstrap"; 
+
+.mulish-title {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #3957f1;
 }
+
+.mulish-desc {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #15163d;
+}
+
+$box-shadow: 2px 3px 3px rgba(0,0,0,0.5)
