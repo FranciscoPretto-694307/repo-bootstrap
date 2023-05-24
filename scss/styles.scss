@@ -16,6 +16,10 @@
     font-size: 4rem;
 }
 
+.size-title2 {
+    font-size: 3rem;
+}
+
 .size-name {
     font-size: 2.5rem;
 }
@@ -40,8 +44,14 @@
     .row {
         flex-direction: column;
     }
-    
-    img {
-        width: 80%;
+ }
+
+@include media-breakpoint-down(lg) { 
+    .responsive {
+        flex-direction: column;
+    }
+    .img-100pr {
+        width: 100%;
     }
  }
+
