@@ -86,12 +86,6 @@ font-family: 'Source Sans Pro', sans-serif;
     width: 600px;
 }
 
-@include media-breakpoint-down(lg) { 
-    .form-control {
-        width: 500px;
-    }
- }
-
  @include media-breakpoint-down(md) { 
     .form-control {
         width: 400px;

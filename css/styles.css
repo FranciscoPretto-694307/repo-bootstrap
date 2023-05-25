@@ -10803,11 +10803,6 @@ font-family: 'Source Sans Pro', sans-serif;
   width: 600px;
 }
 
-@media (max-width: 991.98px) {
-  .form-control {
-    width: 500px;
-  }
-}
 @media (max-width: 767.98px) {
   .form-control {
     width: 400px;

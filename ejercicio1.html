@@ -9,24 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body>
-    <form>
-      <div class="border p-5">
-        <div class="mb-3">
-          <label for="formCorreo" class="form-label mulish-semibold size18pt color-blue">Correo Electrónico</label>
-          <input type="email" class="form-control" id="formCorreo"> 
-          <p class="form-text mulish-italic size13pt color-blue">Nunca compartiremos tu dirección de correo electrónico con nadie</p>
+<body class="border">
+    <form class="d-flex justify-content-center">
+        <div class="p-5">
+            <div class="mb-3">
+                <label for="formCorreo" class="form-label mulish-semibold size18pt color-blue">Correo Electrónico</label>
+                <input type="email" class="form-control" id="formCorreo"> 
+                <p class="form-text mulish-italic size13pt color-blue">Nunca compartiremos tu dirección de correo electrónico con nadie</p>
+            </div>
+            <div class="mb-3">
+                <label for="formContraseña" class="form-label mulish-semibold size18pt color-blue">Contraseña</label>
+                <input type="password" class="form-control" id="formContraseña">
+            </div>
+            <div class="mb-3">
+                <input type="checkbox" class="form-check-input" id="formRecordarme">
+                <label class="form-check-label mulish-reg size18pt color-blue" for="formRecordarme">Recordarme</label>
+            </div>
+            <button type="submit" class="btn btn-primary mulish-bold size18pt color-white">Enviar</button>
         </div>
-        <div class="mb-3">
-          <label for="formContraseña" class="form-label mulish-semibold size18pt color-blue">Contraseña</label>
-          <input type="password" class="form-control" id="formContraseña">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="formRecordarme">
-          <label class="form-check-label mulish-reg size18pt color-blue" for="formRecordarme">Recordarme</label>
-        </div>
-        <button type="submit" class="btn btn-primary mulish-bold size18pt color-white">Enviar</button>
-    </div>
     </form>
     <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script type="module" src="js/main.js"></script>
