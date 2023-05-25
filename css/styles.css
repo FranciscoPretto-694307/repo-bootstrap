@@ -10745,8 +10745,32 @@ font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
 }
 
+.sans-black {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+}
+
+.sans-reg {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+}
+
+.sans-italic {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.size62pt {
+  font-size: 5rem;
+}
+
 .size18pt {
   font-size: 1.5rem;
+}
+
+.size16pt {
+  font-size: 1.3rem;
 }
 
 .size13pt {
@@ -10765,6 +10789,10 @@ font-family: 'Source Sans Pro', sans-serif;
   background-color: #5974ff;
 }
 
+.bg-blue {
+  background-color: #04146c;
+}
+
 .btn {
   width: 150px;
   height: 50px;
@@ -10772,8 +10800,35 @@ font-family: 'Source Sans Pro', sans-serif;
 
 .form-control {
   border: 1px solid #04146c;
-  width: 50%;
-  max-width: 600px;
+  width: 600px;
+}
+
+@media (max-width: 991.98px) {
+  .form-control {
+    width: 500px;
+  }
+}
+@media (max-width: 767.98px) {
+  .form-control {
+    width: 400px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+  }
+  .btn-primary {
+    text-align: center;
+  }
+  .sans-black {
+    text-align: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .form-control {
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
