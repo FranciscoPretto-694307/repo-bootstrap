@@ -10730,7 +10730,7 @@ textarea.form-control-lg {
 .mulish-title2 {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
-  font-size: 5.5rem;
+  font-size: 4rem;
   color: #0a2ff1;
 }
 
@@ -10744,19 +10744,34 @@ textarea.form-control-lg {
 .mulish-h2 {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 1rem;
   color: white;
 }
 
 .mulish-desc2 {
   font-family: "Mulish", sans-serif;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 0.7rem;
   color: white;
 }
 
 .card-img-overlay {
   top: unset;
+}
+
+.col {
+  padding: unset;
+}
+
+@media (max-width: 991.98px) {
+  .card {
+    min-width: 300px;
+  }
+}
+@media (max-width: 767.98px) {
+  .row {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

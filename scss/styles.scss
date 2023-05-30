@@ -12,7 +12,7 @@
 .mulish-title2 {
     font-family: 'Mulish', sans-serif;
     font-weight: 700;
-    font-size: 5.5rem;
+    font-size: 4rem;
     color: #0a2ff1;
 }
 
@@ -26,19 +26,37 @@
 .mulish-h2 {
     font-family: 'Mulish', sans-serif;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 1rem;
     color: white;
 }
 
 .mulish-desc2 {
     font-family: 'Mulish', sans-serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 0.7rem;
     color: white;
 }
 
 .card-img-overlay {
     top: unset;
 }
+
+.col {
+    padding: unset;
+}
+
+@include media-breakpoint-down(lg) { 
+    .card {
+        min-width: 300px;
+    }
+ }
+
+ @include media-breakpoint-down(md) { 
+    .row {
+        flex-direction: column;
+    }
+  }
+
+
 
 $box-shadow: 2px 3px 3px rgba(0,0,0,0.5)
