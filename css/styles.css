@@ -10770,6 +10770,12 @@ textarea.form-control-lg {
   .img-100pr {
     width: 100%;
   }
+  .pe-5 {
+    padding-right: 0 !important;
+  }
+  .margin-text {
+    margin: 30px !important;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
