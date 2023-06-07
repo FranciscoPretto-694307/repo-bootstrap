@@ -9,50 +9,131 @@
 </head>
 <body>
     <header class="d-inline">
-        <div>
-            <a href="https://www.clubaunion.com.ar/">
-                <img src="imgs/escudo union.png" class="rounded float-start img-fluid img-width" />
-            </a>
-        </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+          <div class="container-fluid">
+            <a href="https://www.clubaunion.com.ar/">
+                <img src="imgs/escudo union.png" class="rounded float-start img-width" />
+            </a>
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">       
+                  <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#loginModal">Ingresar</button>                                     
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
             </div>
-          </nav>
+          </div>
+        </nav>
     </header>
     <main>
+      <div class="container text-center">
+        <div>
+            <h1 class="mulish-bold size-title color-darkblue">NUESTRO TEAM</h1>
+        </div>
+        <div class="row">
+            <div class="col card text-center" id="card-1">
+                <img src="imgs/sofia.png" class="card-img-top img-fluid rounded px-3 py-1" />
+                <div class="card-body">
+                    <h2 class="mulish-bold size-name color-blue">Sofia</h2>
+                    <h3 class="mulish-bold size-text color-darkblue">Social Media Manager</h3>
+                    <p class="mulish-reg size-text color-darkblue">Te ayudo a planificar una estrategia de marketing 100% personalizada, acorde a las necesidades de tu marca.</p>
+                    <button class="mulish-reg size-text color-darkblue" data-bs-toggle="modal" data-bs-target="#cardModal" data-bs-ref-id="card-1" data-bs-title="Tarjeta 1">Ver mi perfil</button>
+                </div>
+            </div>
+            <div class="col card text-center" id="card-2">
+                <img src="imgs/ulises.png" class="card-img-top img-fluid rounded px-3 py-1" />
+                <div class="card-body">
+                    <h2 class="mulish-bold size-name color-blue">Ulises</h2>
+                    <h3 class="mulish-bold size-text color-darkblue">Writer</h3>
+                    <p class="mulish-reg size-text color-darkblue">Responsable del contenido y la comunicación, para ayudarte a transmitir el mensaje que querés.</p>
+                    <button class="mulish-reg size-text color-darkblue" data-bs-toggle="modal" data-bs-target="#cardModal" data-bs-ref-id="card-2" data-bs-title="Tarjeta 2">Ver mi perfil</button>
+                </div>
+            </div>
+            <div class="col card text-center" id="card-3">
+                <img src="imgs/lucia.png" class="card-img-top img-fluid rounded px-3 py-1" />
+                <div class="card-body">
+                    <h2 class="mulish-bold size-name color-blue">Lucía</h2>
+                    <h3 class="mulish-bold size-text color-darkblue">Diseñadora</h3>
+                    <p class="mulish-reg size-text color-darkblue">Los detalles no son los detalles. Los detalles son el diseño, decía Eames, ¡y para eso estoy acá! Pongámosle onda a tu marca.</p>
+                    <button class="mulish-reg size-text color-darkblue" data-bs-toggle="modal" data-bs-target="#cardModal" data-bs-ref-id="card-3" data-bs-title="Tarjeta 3">Ver mi perfil</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div>
+        <button type="button" class="btn btn-outline-primary">A</button>
+        <button type="button" class="btn btn-outline-primary">B</button>
+        <button type="button" class="btn btn-outline-primary">C</button>
+        <button type="button" class="btn btn-outline-primary">D</button>
+        <button type="button" class="btn btn-outline-primary">E</button>
+      </div>
 
+      <div class="modal fade modal-dialog-scrollable" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="false">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="cardModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" >
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="false">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form id="login_frm" class="needs-validation" novalidate>
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body ">
+                  <div class="row">
+                    <div class="col">
+                      <label for="username_fld" class="form-label">Usuario</label>
+                      <input type="text" class="form-control" id="username_fld" name="username" submitable="true" placeholder="usuario" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <label for="password_fld" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password_fld" name="pwd" submitable="true" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" >Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
     </main>
     <footer>
 

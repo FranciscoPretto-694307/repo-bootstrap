@@ -1,2 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+.img-width {
+    max-width: 50px;
+}
+
+.mulish-bold {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+}
+
+.mulish-reg {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+}
+
+.size-title {
+    font-size: 4rem;
+}
+
+.size-name {
+    font-size: 2.5rem;
+}
+
+.size-text {
+    font-size: 1.5rem;
+}
+
+.color-darkblue {
+    color: #04146c;
+}
+
+.color-blue {
+    color: #0a2ff1;
+}
+
+.card {
+    border: unset;
+}
+
+@include media-breakpoint-down(sm) { 
+    .row {
+        flex-direction: column;
+    }
+ }

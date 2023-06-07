@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -10717,6 +10718,49 @@ textarea.form-control-lg {
   }
   .d-print-none {
     display: none !important;
+  }
+}
+.img-width {
+  max-width: 50px;
+}
+
+.mulish-bold {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+}
+
+.mulish-reg {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+}
+
+.size-title {
+  font-size: 4rem;
+}
+
+.size-name {
+  font-size: 2.5rem;
+}
+
+.size-text {
+  font-size: 1.5rem;
+}
+
+.color-darkblue {
+  color: #04146c;
+}
+
+.color-blue {
+  color: #0a2ff1;
+}
+
+.card {
+  border: unset;
+}
+
+@media (max-width: 575.98px) {
+  .row {
+    flex-direction: column;
   }
 }
 
