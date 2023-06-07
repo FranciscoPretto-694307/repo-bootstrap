@@ -2,9 +2,6 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-.img-width {
-    max-width: 50px;
-}
 
 .mulish-bold {
     font-family: 'Mulish', sans-serif;
@@ -36,12 +33,3 @@
     color: #0a2ff1;
 }
 
-.card {
-    border: unset;
-}
-
-@include media-breakpoint-down(sm) { 
-    .row {
-        flex-direction: column;
-    }
- }

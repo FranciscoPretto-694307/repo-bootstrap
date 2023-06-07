@@ -10720,10 +10720,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.img-width {
-  max-width: 50px;
-}
-
 .mulish-bold {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
@@ -10752,16 +10748,6 @@ textarea.form-control-lg {
 
 .color-blue {
   color: #0a2ff1;
-}
-
-.card {
-  border: unset;
-}
-
-@media (max-width: 575.98px) {
-  .row {
-    flex-direction: column;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
