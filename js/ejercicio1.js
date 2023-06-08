@@ -20,22 +20,13 @@ edadSubmitFrm.addEventListener('submit', event => {
     }
     if (data["frm_edad_fld"] >= 18) {
       alert("Edad validada! Usted es mayor de edad. (" + data["frm_edad_fld"] + ")");
+      document.getElementById('edadValidada').innerText = "MAYOR. Su edad es: " + data["frm_edad_fld"];
     }   else {
             alert("Edad no validada! Usted es menor de edad. (" + data["frm_edad_fld"] + ")")
+            document.getElementById('edadValidada').innerText = "MENOR. Su edad es: " + data["frm_edad_fld"];
         } 
 
   }
 
 })
 
-
-/* otra forma de realizar el ejercicio con un prompt e inner.html en lugar de usar formulario y alerts. 
-
-var edad = prompt("Ingrese su edad"); 
-
-if(edad>=18) {
-    alert ("Usted es mayor de edad. Edad: " + edad);
-} else {
-    alert ("Usted es menor de edad. Edad: " + edad)
-}
-*/

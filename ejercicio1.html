@@ -7,16 +7,19 @@
     <title>Ejercicio 1</title>
     <link rel="stylesheet" href="css/styles.css"/>
 </head>
-<body>
-    <h1 class="mulish-bold size-title color-blue text-center">M2 - Ejercicio 1</h1>
-    <form id="frm_edad" class="mulish-reg size-text color-blue needs-validation" novalidate>
+<body class="mulish-reg size-text color-blue">
+    <h1 class="mulish-bold size-title text-center">M2 - Ejercicio 1</h1>
+    
+    <form id="frm_edad" class="needs-validation" method="post" action="" novalidate>
         <div class="m-1">
             <label for="frm_edad_fld" class="form-label">Edad</label>
             <input type="number" class="form-control" name="frm_edad_fld" submitable="true" placeholder="ingrese aquí su edad" required>
         </div>
         <button type="submit" class="m-1 btn btn-primary" >Validar</button>
     </form>
-    <p></p>
+
+    <p id="edadValidada" class="color-darkblue"> </p>
+
     <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script type="module" src="js/ejercicio1.js"></script>
 </body>
