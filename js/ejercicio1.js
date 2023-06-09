@@ -18,11 +18,13 @@ var flujo = [
 
 var saldoAnual = 0;
 
+
+
 for (var i = 0; i<flujo.length; i++) {
-    var saldoMensual = flujo[i].ingreso - flujo[i].egreso;
-    saldoAnual += saldoMensual
-    console.log ("La diferencia del mes " + flujo[i].periodo + " es: " + saldoMensual)
+    var saldoMensual = flujo[i].ingreso - flujo[i].egreso
+    saldoAnual += saldoMensual 
+    document.getElementById('datos').innerHTML += "periodo: " + flujo[i].periodo + ", ingreso: " + flujo[i].ingreso + ", egreso: " + flujo[i].egreso + "<br>"
 }
-console.log (saldoAnual)
-//como hacer para sumar todos los meses para calc dif anual?
+
+document.getElementById('saldo').innerText = "La diferencia anual es de:  " + saldoAnual ;
 
