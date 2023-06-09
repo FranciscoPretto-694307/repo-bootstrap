@@ -16,7 +16,7 @@ for (var i = 0 ; i<ofertas.length ; i++) {
 
 
 
-function calcInt (num1, num2, num3) {
-    var int = (num1 * num2 * num3) / 100 ; 
-    return int;
+function calcInt (capital, plazo, tasa) {
+    var interes = (capital * plazo * tasa) / 100 ; 
+    return interes;
 }
