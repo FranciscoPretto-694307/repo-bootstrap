@@ -19,9 +19,13 @@ loginSubmitFrm.addEventListener('submit', event => {
       }
       
     }
-    if (data["frm_user_fld"] == "admin" && data["frm_pwd_fld"] == "1234") {
-      alert("Su ingreso ha sido validado. Bienvenido: " + data["frm_user_fld"]);
-      document.getElementById('bienvenido').innerHTML = "BIENVENIDO: " + data["frm_user_fld"];
+
+    var usuario = data["frm_user_fld"];
+    var password = data["frm_pwd_fld"];
+
+    if (usuario == "admin" && password == "1234") {
+      alert("Su ingreso ha sido validado. Bienvenido: " + usuario);
+      document.getElementById('bienvenido').innerHTML = "BIENVENIDO: " + usuario;
     }   else {
             alert("Su usuario o contraseña son incorrectos. Por favor verifique y vuelva a intentar.")
             document.getElementById('bienvenido').innerHTML = " " ;

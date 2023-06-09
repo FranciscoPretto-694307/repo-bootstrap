@@ -11,19 +11,14 @@ edadSubmitFrm.addEventListener('submit', event => {
     frm.classList.add('was-validated')
     var data = {}
     
-    for (var i = 0; i<frm.length; i++) {
-      var field = frm[i]
-      if (field.getAttribute("submitable") == "true") {
-        data[field.name] = field.value;
-      }
-      
-    }
-    if (data["frm_edad_fld"] >= 18) {
-      alert("Edad validada! Usted es mayor de edad. (" + data["frm_edad_fld"] + ")");
-      document.getElementById('edadValidada').innerText = "MAYOR. Su edad es: " + data["frm_edad_fld"];
+  var edad = document.getElementsByName("frm_edad_fld")[0].value ;
+
+    if (edad >= 18) {
+      // alert("Edad validada! Usted es mayor de edad. (" + edad + ")");
+      document.getElementById('edadValidada').innerText = "Usted es mayor de 18. Su edad es: " + edad;
     }   else {
-            alert("Edad no validada! Usted es menor de edad. (" + data["frm_edad_fld"] + ")")
-            document.getElementById('edadValidada').innerText = "MENOR. Su edad es: " + data["frm_edad_fld"];
+            // alert("Edad no validada! Usted es menor de edad. (" + edad + ")")
+            document.getElementById('edadValidada').innerText = "Usted es menor de 18. Su edad es: " + edad;
         } 
 
   }
