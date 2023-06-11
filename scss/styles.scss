@@ -35,13 +35,3 @@
 .color-blue {
     color: #0a2ff1;
 }
-
-.card {
-    border: unset;
-}
-
-@include media-breakpoint-down(sm) { 
-    .row {
-        flex-direction: column;
-    }
- }

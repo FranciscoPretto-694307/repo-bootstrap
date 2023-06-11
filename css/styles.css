@@ -10754,14 +10754,4 @@ textarea.form-control-lg {
   color: #0a2ff1;
 }
 
-.card {
-  border: unset;
-}
-
-@media (max-width: 575.98px) {
-  .row {
-    flex-direction: column;
-  }
-}
-
 /*# sourceMappingURL=styles.css.map */
