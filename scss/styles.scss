@@ -36,12 +36,6 @@
     color: #0a2ff1;
 }
 
-.card {
-    border: unset;
+.img-btn {
+    width: 30px;
 }
-
-@include media-breakpoint-down(sm) { 
-    .row {
-        flex-direction: column;
-    }
- }
