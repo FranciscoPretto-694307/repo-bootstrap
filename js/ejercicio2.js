@@ -9,6 +9,8 @@ var ofertas = [
 
 var intereses = [];
 
+/*el ejercicio2 del m4 entiendo que ya esta cubierto ya que recibo el array de ofertas
+ y mediante la funcion calcInt retorno otro array con los resultados que tienen un item para el intenes */
 for (var i = 0 ; i<ofertas.length ; i++) {
     console.log (ofertas[i])
     var interes = calcInt (ofertas[i].capital, ofertas[i].plazo, ofertas[i].tasa)

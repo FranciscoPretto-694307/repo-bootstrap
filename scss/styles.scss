@@ -36,12 +36,10 @@
     color: #0a2ff1;
 }
 
-.card {
-    border: unset;
+.bg-red {
+    background-color: red;
 }
 
-@include media-breakpoint-down(sm) { 
-    .row {
-        flex-direction: column;
-    }
- }
+.bg-green {
+    background-color: green;
+}

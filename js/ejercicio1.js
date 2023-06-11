@@ -26,5 +26,13 @@ for (var i = 0; i<flujo.length; i++) {
     document.getElementById('datos').innerHTML += "periodo: " + flujo[i].periodo + ", ingreso: " + flujo[i].ingreso + ", egreso: " + flujo[i].egreso + "<br>"
 }
 
-document.getElementById('saldo').innerText = "La diferencia anual es de:  " + saldoAnual ;
 
+if (saldoAnual>0) {
+  document.getElementById('saldo').innerHTML = 1;
+  document.getElementById('saldo').classList.add('bg-green')
+} else if (saldoAnual<0) {
+  document.getElementById('saldo').innerHTML = -1;
+  document.getElementById('saldo').classList.add('bg-red');
+} else {
+  document.getElementById('saldo').innerHTML = 0;
+}
