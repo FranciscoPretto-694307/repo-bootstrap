@@ -10,16 +10,18 @@ calculoForm.addEventListener('submit', event => {
   event.preventDefault()
   event.stopPropagation()
   var frm = event.target
+  var presupuestos = document.getElementById('monto_presupuesto_fld').value
+  
   if (frm.checkValidity()) {
     frm.classList.add('was-validated')
-    var categorias = []
     
     for (var i = 0; i<frm.length; i++) {
+      console.log(presupuestos)
       var field = frm[i]
       if (field.getAttribute("category") == "true") {
-        categorias.push({"nombre":field.value});
+        document.getElementById('resultado').innerHTML += "El presupuesto para su categoría '" + field.value + "' " ;
       } else if (field.getAttribute("porcentaje") == "true") {
-        categorias.push({"porcentaje":field.value})
+        document.getElementById('resultado').innerHTML += "es de: $" + calcPr(presupuestos, field.value) + "<br>" ;
       }
       
     }
