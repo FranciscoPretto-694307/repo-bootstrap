@@ -9,29 +9,22 @@
 </head>
 <body class="container mulish-reg color-blue size-text">
     <main>
-        <h1 class="mulish-bold size-title text-center">M5 - EJERCICIO 2</h1>
-        <form id="frm_presupuesto" class="flex-column needs-validation border p-3" method="post" action="" novalidate>
+        <h1 class="mulish-bold size-title text-center">M5 - EJERCICIO 2 (extra)</h1>
+        <form id="frm_calculo" class="needs-validation border p-3" method="post" action="" novalidate>
             <div>
                 <label for="monto_presupuesto_fld" class="form-label">Ingrese aquí el monto total de su presupuesto</label>
-                <input type="number" class="form-control" name="monto_presupuesto_fld" required>
+                <input type="number" class="form-control" id="monto_presupuesto_fld" required>
             </div>
             <h3>Categorías</h3>
-            <div class="d-flex mb-3">
-                <input type="text" class="form-control" name="categoria1_fld" placeholder="Nombre de su categoría">
-                <input type="number" class="form-control" name="pr_categoria1_fld" placeholder="Porcentaje para su categoría" required>
+            <div class="container_fields">
+                <div class="d-flex mb-3">
+                    <input type="text" class="form-control" id="categoria_1_fld" category=true placeholder="Nombre de su categoría">
+                    <input type="number" class="form-control" id="pr_categoria_1_fld" porcentaje=true placeholder="Porcentaje para su categoría" required>
+                </div>
             </div>
-            <div class="d-flex mb-3">
-                <input type="text" class="form-control" name="categoria2_fld" placeholder="Nombre de su categoría">
-                <input type="number" class="form-control" name="pr_categoria2_fld" placeholder="Porcentaje para su categoría" required>
-            </div>
-            <div class="d-flex mb-3">
-                <input type="text" class="form-control" name="categoria3_fld" placeholder="Nombre de su categoría">
-                <input type="number" class="form-control" name="pr_categoria3_fld" placeholder="Porcentaje para su categoría" required>
-            </div>
-            <button onclick="addField()" type="button" class="btn btn-primary" name="" id="">Añadir</button>
+            <button type="button" class="add_fields_btn btn btn-primary" name="" id="añadir_btn">Añadir</button>
             <button type="submit" class="btn btn-primary">Calcular</button>
         </form>
-        <p class= "color-darkblue" id="presupuesto"></p>
     </main>
     <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script type="module" src="js/ejercicio3.js"></script>

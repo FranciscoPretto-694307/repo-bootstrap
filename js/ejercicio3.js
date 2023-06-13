@@ -1,39 +1,31 @@
+import * as jquery from '/node_modules/jquery/dist/jquery.js'
 import * as Popper from "/node_modules/@popperjs/core/dist/umd/popper.js"
 import * as bootstrap from '/node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 
-
 //interfaz para que sea el usuario quien ingrese las categorías que desee, con el nombre de la categoría y el porcentaje que decide destina
 
+const calculoForm = document.getElementById('frm_calculo')
 
-const porcentajesForm = document.getElementById('frm_presupuesto')
-
-porcentajesForm.addEventListener('submit', event => {
+calculoForm.addEventListener('submit', event => {
   event.preventDefault()
   event.stopPropagation()
   var frm = event.target
   if (frm.checkValidity()) {
     frm.classList.add('was-validated')
-    var data = {}
+    var categorias = []
     
-  var importeTotal = document.getElementsByName("monto_presupuesto_fld")[0].value ;
-  var prCategoria1 = parseInt(document.getElementsByName("pr_categoria1_fld")[0].value) ;
-  var prCategoria2 = parseInt(document.getElementsByName("pr_categoria2_fld")[0].value) ;
-  var prCategoria3 = parseInt(document.getElementsByName("pr_categoria3_fld")[0].value) ;
-  var categoria1 = document.getElementsByName("categoria1_fld")[0].value ;
-  var categoria2 = document.getElementsByName("categoria2_fld")[0].value ;
-  var categoria3 = document.getElementsByName("categoria3_fld")[0].value ;
-  var gastos1 = calcPr (importeTotal, prCategoria1);
-  var gastos2 = calcPr (importeTotal, prCategoria2);
-  var gastos3 = calcPr (importeTotal, prCategoria3);
+    for (var i = 0; i<frm.length; i++) {
+      var field = frm[i]
+      if (field.getAttribute("category") == "true") {
+        categorias.push({"nombre":field.value});
+      } else if (field.getAttribute("porcentaje") == "true") {
+        categorias.push({"porcentaje":field.value})
+      }
+      
+    }
+    
+  }
 
-  if (prCategoria1+prCategoria2+prCategoria3==100){
-    document.getElementById('presupuesto').innerHTML= "El presupuesto para la categoria '" + categoria1 + "' es de: $" + gastos1 +  "<br> El presupuesto para la categoria '" + categoria2 + "' es de: $" + gastos2 + "<br> El presupuesto para la categoria '" + categoria3 + "' es de: $" + gastos3 ;
-} else {
-    document.getElementById('presupuesto').innerHTML="La suma de los porcentajes ingresados no da 100, por favor verifiquelos y vuelva a intentarlo.";
-}
-
-}
-  
 })
 
 
@@ -42,7 +34,17 @@ function calcPr (total, pr) {
     return resultado;
 }
 
-//investigando como hacer funcion que añada nuevos input para seguir escribiendo nuevas categorias
-function addField (){
+//funcion con jquery para generar nuevos inputs dinamicamente y que su id tenga un nombre con un contador que se incrementa
 
-}
+$(document).ready(function() {
+  var container_fields = $(".container_fields");
+  var add_button = $(".add_fields_btn");
+
+  var count = 1;
+  $(add_button).click(function(e) {
+      e.preventDefault();
+      count++;
+      $(container_fields).append('<div class="d-flex mb-3"><input type="text" class="form-control" id="categoria_' + count + '_fld" category=true placeholder="Nombre de su categoría">' + '<input type="number" class="form-control" id="pr_categoria_' + count + '_fld" porcentaje=true placeholder="Porcentaje para su categoría" required></div>'); 
+  });
+
+});
